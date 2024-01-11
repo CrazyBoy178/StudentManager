@@ -123,7 +123,7 @@ public class GradeController extends HttpController<GradeMapper, Grade>{
                         gradeMapper.update(Float.parseFloat(grade.grade),grade.uid,grade.sid);
                     }
                 }
-
+                
                 return ResponseEntity.ok("上传成功,请返回刷新");
             } catch (IOException e) {
                 e.printStackTrace();
